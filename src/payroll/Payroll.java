@@ -13,9 +13,9 @@ package payroll;
 public class Payroll 
 {
 
-   public double Salary;
-   public double bonus;
-  public String emp;
+   private double Salary;
+   private double bonus;
+  private String emp;
  
      /**constructor that takes the salary and employee name
       * 
@@ -26,8 +26,45 @@ public class Payroll
             emp=givenUser;
                  
         }
+
+    @Override
+    public String toString()
+    {
+        return "Payroll{" + "Salary=" + Salary + ", bonus=" + bonus + ", emp=" + emp + '}';
+    }
       
-     
+   
+
+    public double getSalary()
+    {
+        return Salary;
+    }
+
+    public void setSalary(double Salary)
+    {
+        
+        this.Salary = Salary;
+    }
+
+    public double getBonus()
+    {
+        return bonus;
+    }
+
+    public void setBonus(double bonus)
+    {
+        this.bonus = bonus;
+    }
+
+    public String getEmp()
+    {
+        return emp;
+    }
+
+    public void setEmp(String emp)
+    {
+        this.emp = emp;
+    }
     
     
     
